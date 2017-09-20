@@ -1,6 +1,9 @@
 @echo off
 rem This script configures your myCMD environment. It is called when you run myCMD
 
+rem Set the location of your myCMD scripts (this should also be in here in case you launch from a shortcut instead of from mycmd.bat)
+set MYCMDLOC=%~dp0
+
 rem Linux dupes
 doskey clear=cls
 doskey ls=dir
