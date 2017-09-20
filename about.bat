@@ -15,7 +15,7 @@ echo       ##  #  ##     ##     ##        ##  #  ##  ##     ##
 echo       ##     ##     ##     ##    ##  ##     ##  ##     ##
 echo       ##     ##     ##      ######   ##     ##  ########
 echo                   A better way to cmd.
-echo             www.github.com/adolan5/dotfiles
+echo             www.github.com/adolan5/myCMD
 echo Press any key to exit...
 keypress.exe
 if %errorlevel%==1 goto eof
@@ -28,7 +28,7 @@ echo       ##  #  ##     ##     ##        ##  #  ##  ##     ##
 echo       ##     ##     ##     ##    ##  ##     ##  ##     ##
 echo       ##     ##     ##      ######   ##     ##  ########
 echo                   A better way to cmd.
-echo             www.github.com/adolan5/dotfiles
+echo             www.github.com/adolan5/myCMD
 echo Press any key to exit...
 keypress.exe
 if %errorlevel%==1 goto eof
@@ -41,7 +41,7 @@ echo   `   #*  *  *#     #*     *#        #*  *  *#  #*     *#   `
 echo       ##     ##     ##     ##    ##  ##     ##  ##     ##
 echo       ##     ##     ##      ######   ##     ##  ########
 echo                   A better way to cmd.
-echo             www.github.com/adolan5/dotfiles
+echo             www.github.com/adolan5/myCMD
 echo Press any key to exit...
 keypress.exe
 if %errorlevel%==1 goto eof
@@ -54,7 +54,7 @@ echo       ##  #  ##     ##     ##        ##  #  ##  ##     ##
 echo ' ` ' ##     ##     ##     ##    ##  ##     ##  ##     ## ' ` '
 echo       #*     *#     #*      #*##*#   #*     *#  #*##*##*
 echo                   A better way to cmd.
-echo             www.github.com/adolan5/dotfiles
+echo             www.github.com/adolan5/myCMD
 echo Press any key to exit...
 keypress.exe
 if %errorlevel%==1 goto eof
