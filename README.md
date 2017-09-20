@@ -26,11 +26,13 @@ your path, just the directory that you put myCMD in.
 ### Installation
 1. Clone the repo (so long as you have some form of git installed on Windows)  
 `> git clone https://github.com/adolan5/myCMD.git`
-2. Download the executable keypress.exe from the 'releases' section (used for about.bat)
-3. Copy mycmd/\* into where you want myCMD to live (I'd recommend "C:\tools\mycmd" or something simple)
-4. [Add your installation directory to your PATH](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/)
-5. Rename startup\_example.bat to startup.bat
-6. Configure startup.bat for your environment (set aliases, set installation directories, etc.)
+2. Copy `mycmd\*` into where you want myCMD to live (I'd recommend `C:\tools\mycmd` or something simple)
+3. Download `keypress.exe` from the releases section, and place it in `mycmd\executables`.  
+Alternatively, you can compile keypress.exe yourself using MinGW/msys.
+4. [Add your `mycmd\scripts` directory to your PATH](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/).
+This is where your terminal will access the scripts. You do **not** need to add `mycmd\executables` to your path.
+5. Rename `scripts\startup_example.bat` to `startup.bat`
+6. Configure `scripts\startup.bat` for your environment (set aliases, set installation directories, etc.)
 
 ### Configuring your startup.bat
 startup.bat currently has the default installation locations for notepad++ and Gimp 2.8
@@ -49,7 +51,7 @@ of the directory one level up.
 Since you (hopefully) added your myCMD install directory to your PATH,
 you can run myCMD by typing `mycmd` in a regular cmd (**meta**), or
 you can type `mycmd` in Run (WinKey+r).  
-Additionally, you may want to create a shortcut to cmd.exe (C:\Windows\System32\cmd.exe),
+Additionally, you may want to create a shortcut to cmd.exe (`C:\Windows\System32\cmd.exe`),
 and configure it to read in your startup.bat. You can do so by changing
 its 'target' field to:
 >C:\Windows\System32\cmd.exe /K Path\to\your\startup.bat
