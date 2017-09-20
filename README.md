@@ -25,7 +25,7 @@ your path, just the directory that you put myCMD in.
 
 ### Installation
 1. Clone the repo (so long as you have some form of git installed on Windows)  
-`> git clone https://github.com/adolan5/myCMD.git`
+`> git clone https://github.com/adolan5/mycmd.git`
 2. Copy `mycmd\*` into where you want myCMD to live (I'd recommend `C:\tools\mycmd` or something simple)
 3. Download `keypress.exe` from the releases section, and place it in `mycmd\executables`.  
 Alternatively, you can compile keypress.exe yourself using MinGW/msys.
