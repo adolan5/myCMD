@@ -23,48 +23,24 @@ any changes is in place, however, and extra additions are not hard to
 implement. myCMD also doesn't require you to add program directories to
 your path, just the directory that you put myCMD in.
 
-### Installation
-1. Clone the repo (so long as you have some form of git installed on Windows)  
-`> git clone https://github.com/adolan5/mycmd.git`
-2. Copy `mycmd\*` into where you want myCMD to live (I'd recommend `C:\tools\mycmd` or something simple)
-3. Download `keypress.exe` from the releases section, and place it in `mycmd\executables`.  
-Alternatively, you can compile keypress.exe yourself using MinGW/msys.
-4. [Add your `mycmd\scripts` directory to your PATH](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/).
-This is where your terminal will access the scripts. You do **not** need to add `mycmd\executables` to your path.
-5. Rename `scripts\startup_example.bat` to `startup.bat`
-6. Configure `scripts\startup.bat` for your environment (set aliases, set installation directories, etc.)
-
-### Configuring your startup.bat
-startup.bat currently has the default installation locations for notepad++ and Gimp 2.8
-set. These variables are used by the npp.bat and gimp.bat scripts in launching their respective programs.
-If you don't use these programs, feel free to delete one or both of the scripts and remove
-the variables from your startup.bat.  
-Aliases for commands are generally of the form:  
-`doskey myalias=othercommand`  
-and aliases for launching programs are generally of the form:  
-`doskey myalias=Path\to\program.exe`  
-**Note about aliased commands/programs:** Command options/arguments do
-not work with aliases. For example, `ls ..` will *not* display the contents
-of the directory one level up.
-
-### Using myCMD
-Since you (hopefully) added your myCMD install directory to your PATH,
-you can run myCMD by typing `mycmd` in a regular cmd (**meta**), or
-you can type `mycmd` in Run (WinKey+r).  
-Additionally, you may want to create a shortcut to cmd.exe (`C:\Windows\System32\cmd.exe`),
-and configure it to read in your startup.bat. You can do so by changing
-its 'target' field to:
->C:\Windows\System32\cmd.exe /K Path\to\your\startup.bat
-
-This way, you can run myCMD from a shortcut and even pin it to your task bar after launching it.
+### How do I get it and use it?
+Refer to the [wiki](https://github.com/adolan5/myCMD/wiki)
 
 ### Notes
-* Be sure to realize that myCMD works by reading in your startup.bat, so
+* Be sure to realize that myCMD works by reading in your `startup.bat`, so
 make sure that what it reads is reasonably safe.  
+* I haven't yet encountered errors/weird cases/crashes on my machines running myCMD.
+Hopefully that makes you feel confident enough to give it a try too!
+* I take no responsibility for modifications that I don't make to `startup.bat` or
+any other scripts in this repository.
 * Most scripts are decent about checking if your arguments/settings exist/are valid.
-If you are receiving errors, check through this document to see if you have
+If you are receiving errors, check through the wiki to see if you have
 moved files into proper locations and changed values of variables according
 to your setup.  
-* In startup.bat, directories that are assigned to variables should
+* In `startup.bat`, directories that are assigned to variables should
 **never** be in quotes!
+* Try taking a look at some of the scripts, if you're interested. I've done a little
+documentation on what's happening, how arguments are parsed over, what variables
+are used, etc. This has been a fun learning experience for me, and hopefully could
+be for you too!
 * **Thanks for checking out myCMD!**
