@@ -20,5 +20,7 @@ Return
 
 ; For ctl+alt+y --> Kill the ahk script
 ^!y::
-ExitApp
+MsgBox 4, Disable shortcut?, ctl+alt+y will disable the mycmd shortcut ahk script. It can be reenabled by running it from your myCMD executables location, or on startup if configured. Continue?
+IfMsgBox Yes
+    ExitApp
 Return
